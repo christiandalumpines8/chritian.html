@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Enrollment Form</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background_image_url.jpg'); /* Replace 'background_image_url.jpg' with the URL of the background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    width: 60%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8); /* Adjust the opacity as per your preference */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>College Enrollment Form</h2>
+  <form action="submit.php" method="post">
+    <h3>Student Information</h3>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="birthdate">Date of Birth:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <label for="placeOfBirth">Place of Birth:</label>
+    <input type="text" id="placeOfBirth" name="placeOfBirth" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label for="nationality">Nationality:</label>
+    <input type="text" id="nationality" name="nationality" required>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="province">Province:</label>
+    <input type="text" id="province" name="province" required>
+
+    <label for="postalCode">Postal Code:</label>
+    <input type="text" id="postalCode" name="postalCode" required>
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <h3>Academic Information</h3>
+    <label for="previousSchool">Previous School:</label>
+    <input type="text" id="previousSchool" name="previousSchool" required>
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" name="course" required>
+
+    <label for="courseLevel">Course Level Applying For:</label>
+    <select id="courseLevel" name="courseLevel">
+      <option value="undergraduate">Undergraduate</option>
+      <option value="graduate">Graduate</option>
+    </select>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate" required>
+
+    <label for="additionalInfo">Additional Comments or Information:</label>
+    <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+
+    <h3>Parents Information</h3>
+    <label for="motherName">Mother's Name:</label>
+    <input type="text" id="motherName" name="motherName" required>
+
+    <label for="fatherName">Father's Name:</label>
+    <input type="text" id="fatherName" name="fatherName" required>
+
+    <label for="guardianName">Guardian's Name:</label>
+    <input type="text" id="guardianName" name="guardianName">
+
+    <label for="parentAddress">Address:</label>
+    <textarea id="parentAddress" name="parentAddress" rows="3" required></textarea>
+
+    <label for="parentPhone">Phone Number:</label>
+    <input type="text" id="parentPhone" name="parentPhone" required>
+
+    <label for="parentWork">Work:</label>
+    <input type="text" id="parentWork" name="parentWork">
+
+    <!-- Add more fields as needed -->
+
+</form>
+<!-- Button to go to another website -->
+<button onclick="redirectToOtherWebsite()">SUBMIT</button>
+
+<!-- Script to redirect to another website -->
+<script>
+function redirectToOtherWebsite() {
+window.location.href = "file:///C:/Users/Jannet/Desktop/chritian.html/thankyou%20for%20registering.html";
+}
+
+
+</script>
+</button>
+</form>
+
+</div>
+
+</body>
+</html>
